@@ -10,7 +10,7 @@ f = urlopen(url) #otwieram połączenie URL
 resultxml = f.read() #czytam zawartość
 xml = etree.XML(resultxml) #strukturyzacja
 
-resultelements= xml.xpath("//ArticleTitle")   #Inne: ArticleTitle, LastName, Keyword, AbstractText, DescriptorName
+resultelements= xml.xpath("//ArticleTitle")   #Inne: ArticleTitle, LastName, Keyword, AbstractText, DescriptorName (meshtermy), Title (Journal)
 
 for element in resultelements:
     print(element.text)
