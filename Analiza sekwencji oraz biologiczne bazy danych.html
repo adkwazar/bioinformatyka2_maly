@@ -15689,8 +15689,8 @@ jp-needs-light-background
 <span class="c1">#tworzę pustą listę, przechodze kolejne sekwencje z pliku i z uzyciem metody k-mer porownuje je z zapytaniem</span>
 <span class="n">ks</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">n</span><span class="p">)):</span>
-    <span class="n">ks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k_comparison</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">k</span><span class="o">=</span><span class="mi">3</span><span class="p">))</span> <span class="c1">#wywoluje metode k-mer z k=3 dla zapytania i kolejnej sekwencji z pliku</span>
-    <span class="k">if</span> <span class="n">k_comparison</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">k</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span> <span class="c1">#jezeli odleglosc jest mniejsza niz 5 to wyswietle te sekwencje</span>
+    <span class="n">ks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k_comparison</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span> <span class="c1">#wywoluje metode k-mer z k=3 dla zapytania i kolejnej sekwencji z pliku</span>
+    <span class="k">if</span> <span class="n">k_comparison</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span> <span class="c1">#jezeli odleglosc jest mniejsza niz 5 to wyswietle te sekwencje</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 
@@ -15760,7 +15760,7 @@ jp-needs-light-background
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><h4> Zadanie7: Wykonaj analogicznie obliczenia stosując tym razem metodę Lempel-Ziv (podmień metodę k_comparison na words_comparison). Która sekwencja jest najbardziej podobna do zapytania?</p>
 <p><br></p>
-<p>Uwaga: W przypadku metody Lempel-Ziv nie ma parametru k, a odleglości są z mniejszego zakresu; najczęściej (0,1), chociaż mogą go nieznacznie przekraczać.</p>
+<p>Uwaga: W przypadku metody Lempel-Ziv  odległości są z mniejszego zakresu; najczęściej (0,1), chociaż mogą go nieznacznie przekraczać.</p>
 
 </div>
 </div>
